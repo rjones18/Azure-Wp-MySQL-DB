@@ -39,7 +39,7 @@ resource "azurerm_private_dns_zone_virtual_network_link" "example" {
 }
 
 resource "azurerm_mysql_flexible_server" "example" {
-  name                   = "rj-wp-fs"
+  name                   = "rj-wpserver"
   resource_group_name    = var.rg
   location               = var.location
   administrator_login    = data.azurerm_key_vault_secret.mysql_admin_login.value
